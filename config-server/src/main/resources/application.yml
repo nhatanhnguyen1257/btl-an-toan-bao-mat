@@ -1,0 +1,33 @@
+
+server:
+  port: 9000
+  servlet:
+    context-path: /
+   
+
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/config/
+  application:
+      name: config
+
+#spring.cloud.config.server.bootstrap=true
+#server.cloud.config.server.git.uri=
+
+#spring.config.enabled=true
+#spring.cloud.config.import-check.enabled=true
+#spring.cloud.config.enabled=true
+
+#spring.cloud.config.server.native.searchLocations=file:./config/*
+
+
+  
+#server.cloud.config.server.git.uri=
+
+#spring.config.import=optional:configserver:http://localhost:8888
